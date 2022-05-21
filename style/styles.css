@@ -123,7 +123,8 @@ header {
 }
 
 .site-contact .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -141,9 +142,14 @@ header {
   color: var(--accent-color);
 }
 
-.mail-icon {
+.contact-icon {
+  align-items: center;
   margin-right: 10px;
-  color: currentColor;
+  fill: currentColor;
+}
+
+.mail-icon:hover .mail-icon:focus {
+  fill: currentColor;
 }
 
 /* страничка index.html */
