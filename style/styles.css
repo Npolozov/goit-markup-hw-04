@@ -89,7 +89,7 @@ header {
 }
 
 .site-nav .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--text-title-color);
@@ -98,6 +98,7 @@ header {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  align-items: center;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 40px;
@@ -114,14 +115,13 @@ header {
 }
 .site-contact {
   display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 .site-contact .item + .item {
   margin-left: 50px;
 }
 
-.site-contact {
-  margin-left: auto;
-}
 .site-contact .link {
   display: block;
   padding-top: 32px;
@@ -139,6 +139,11 @@ header {
 .site-contact .link:focus,
 .logo-mail {
   color: var(--accent-color);
+}
+
+.mail-icon {
+  margin-right: 10px;
+  color: currentColor;
 }
 
 /* страничка index.html */
@@ -182,6 +187,7 @@ header {
   margin-top: 0;
   margin-bottom: 30px;
 }
+
 /* peculiarities */
 .feature-list {
   display: flex;
@@ -218,7 +224,7 @@ header {
   height: 120px;
   background: #f5f4fa;
   background-image: url(../images/icons.svg/aerial1.svg);
-  background-size: contain;
+  background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
