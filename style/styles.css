@@ -148,10 +148,6 @@ header {
   fill: currentColor;
 }
 
-.mail-icon:hover .mail-icon:focus {
-  fill: currentColor;
-}
-
 /* страничка index.html */
 /* Hero */
 
@@ -195,6 +191,22 @@ header {
 }
 
 /* peculiarities */
+
+.icon-conteiner {
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon {
+  align-items: center;
+}
+
 .feature-list {
   display: flex;
   flex-direction: row;
@@ -221,19 +233,6 @@ header {
 
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
-}
-
-.feature-list .item::before {
-  margin-bottom: 30px;
-  display: block;
-  content: '';
-  height: 120px;
-  background: #f5f4fa;
-  background-image: url(../images/icons.svg/aerial1.svg);
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
 }
 
 /* About */
@@ -311,8 +310,54 @@ header {
 
 /* Compay */
 
-.company {
-  padding-top: 0;
+.company-title {
+  margin-bottom: 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-title-color);
+}
+
+.company-item {
+  display: flex;
+}
+
+.company-conteiner {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+}
+
+.company-conteiner:hover,
+.company-conteiner:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.company-link {
+  color: var(--primary-text-color);
+}
+
+.company-link:hover,
+.company-link:focus {
+  color: var(--accent-color);
+}
+
+.icon-company {
+  fill: currentColor;
+}
+
+.company-conteiner:last-child {
+  margin-right: 0;
 }
 
 /* footer */
