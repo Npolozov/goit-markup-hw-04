@@ -33,7 +33,6 @@ p {
 }
 
 .conteiner {
-  /* outline: 1px solid tomato; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -302,10 +301,36 @@ header {
 .about-team .profession {
   color: var(--primary-text-color);
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.1;
   text-align: center;
+}
+
+.flex-social-media {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--text-bottons-color);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.social-logo {
+  fill: currentColor;
 }
 
 /* Compay */
@@ -331,25 +356,22 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
   cursor: pointer;
 }
 
-.company-conteiner:hover,
-.company-conteiner:focus {
-  border: 1px solid var(--accent-color);
-}
-
 .company-link {
+  padding: 16px 32px;
   color: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
 }
 
 .company-link:hover,
 .company-link:focus {
   color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .icon-company {
@@ -366,6 +388,11 @@ header {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.contact-menu {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -391,10 +418,6 @@ header {
   font-style: normal;
 }
 
-.contact-footer .contact-footer {
-  /* background-color: tomato; */
-}
-
 .contact-footer .item {
   margin-bottom: 9px;
 }
@@ -409,6 +432,49 @@ header {
   font-size: 14px;
   line-height: 1.7;
   color: var(--text-bottons-color);
+}
+
+.footer-social {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--text-bottons-color);
+  text-transform: uppercase;
+}
+
+.connect {
+  margin-left: 70px;
+}
+
+.footer-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text-color);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-logo {
+  fill: var(--text-bottons-color);
 }
 /* portfolio.html */
 
