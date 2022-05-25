@@ -320,14 +320,20 @@ header {
   justify-content: center;
 }
 
+.social-item:not(:last-child){
+  margin-right: 10px;
+}
+
 .social-link {
   width: 44px;
   height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--primary-text-color);
+  color: #AFB1B8;
 }
+
+
 
 .social-link:hover,
 .social-link:focus {
@@ -360,19 +366,17 @@ header {
 
 .company-conteiner {
   margin-right: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  cursor: pointer;
 }
 
 .company-link {
-  padding: 16px 32px;
-  color: var(--primary-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #AFB1B8;
   border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
 }
 
 .company-link:hover,
@@ -509,8 +513,6 @@ header {
   cursor: pointer;
   border: transparent;
   border-radius: 4px;
-  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12); */
 }
 
 .buttons:hover,
@@ -566,4 +568,13 @@ header {
 
 .list-projects a {
   text-decoration: none;
+}
+
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
